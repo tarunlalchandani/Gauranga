@@ -4,21 +4,21 @@ import "./metrobikitrade.sol";
 
 contract ForSale is Review {
 
-    event NewBicycleForSale(Bid, Model, Color, Price);
+    //event NewBicycleForSale(_bicycleId, Model, Color, Price);
 
-    Bicycle[] public forSale;
+    uint[] public bicycleForSale;
 
     function putForSale(uint _bicycleId, uint _price) public {
         require(msg.sender == bicycleToOwner[_bicycleId], "Not owner of bicycle!");
         Bicycle storage myBicycle = bicycles[_bicycleId];
-        myBicycle.state = FORSALE;
+        myBicycle.state = State.FORSALE;
         myBicycle.price = _price;
-        forSale.push(_bicycleId);
-        emit NewBicycleForSale(_bicycleId, myBicycle.Model, myBicycle.Color, myBicycle.price);
+        bicycleForSale.push(_bicycleId);
+        //emit NewBicycleForSale(myBicycle.Model, myBicycle.Color, myBicycle.price);
     }
 
-    function displayBicycleForSale() public returns(uint[]) {
-        return forSale;
+    function displayBicyclesForSale() external view returns(uint[] memory) {
+        return bicycleForSale;
     }
 
 

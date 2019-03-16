@@ -19,14 +19,14 @@ contract Review is BicycleRegister {
         _;
     }
 
-    function upvoteBicycle(uint _bicycleId) public notReviewed(uint) {
+    function upvoteBicycle(uint _bicycleId) public notReviewed(_bicycleId) {
         require(msg.sender != bicycleToOwner[_bicycleId], "Owner can not review!");  
         Bicycle storage testBicycle = bicycles[_bicycleId];
         testBicycle.upvoteCount++;
     }
 
-    function downvoteBicycle(uint _bicycleId) public notReviewed(uint _bicycleId) {  //seee this
-        // require(msg.sender != bicycleToOwner[_bicycleId]);  
+    function downvoteBicycle(uint _bicycleId) public notReviewed(_bicycleId) {  //seee this
+        require(msg.sender != bicycleToOwner[_bicycleId], "Owner can not review!");  
         Bicycle storage testBicycle = bicycles[_bicycleId];
         testBicycle.downvoteCount++;
     }

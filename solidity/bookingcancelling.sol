@@ -1,5 +1,7 @@
-User talks via contract EthBooking
+//User talks via contract EthBooking
 
+pragma solidity ^0.5.0;
+/*
 contract EthBooking {
     function addBooking(uint listingId) public payable returns(uint bookingId) {
     bookingId =  BookingLibrary.book(ethDB, listingId, msg.sender, msg.value);
@@ -8,7 +10,8 @@ contract EthBooking {
     return bookingId;
 }
 }
-Booking Library code:
+
+// Booking Library code:
 
 library BookingLibrary {
 
@@ -22,7 +25,7 @@ function book(address db, uint listingId, address sender, uint value)
         wallet.receiveFunds.value(cost);
     return bookingId;
 }
-EthWallet Code:
+// EthWallet Code:
 
 contract EthWallet is Mortal {
 
@@ -36,3 +39,5 @@ function receiveFunds() payable {
 function sendFunds(address receiver, uint amount) {
     receiver.transfer(amount);
 }
+
+*/
