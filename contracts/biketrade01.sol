@@ -20,6 +20,5 @@ contract ForSale is Review {
     function displayBicyclesForSale() external view returns(uint[] memory) {
         return bicycleForSale;
     }
-
-
+    
 }

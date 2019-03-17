@@ -17,6 +17,7 @@ contract BicycleRegister is Ownable {
         uint16 boughtAtTime;
         uint price;
         State state;
+        address buyer;
     }
 
     Bicycle[] public bicycles;
@@ -25,7 +26,7 @@ contract BicycleRegister is Ownable {
     mapping(address => uint) public ownerBicycleCount;   //
 
     function _registerBicycle(string memory _Model, string memory _Color) private {
-        uint id = bicycles.push(Bicycle(_Model, _Color, msg.sender, 0, 0, 0, 0, State.NOTFORSALE)) - 1; 
+        uint id = bicycles.push(Bicycle(_Model, _Color, msg.sender, 0, 0, 0, 0, State.NOTFORSALE, address(0))) - 1; 
         bicycleToOwner[id] = msg.sender;
         ownerBicycleCount[msg.sender]++;
         emit NewBicycle(id, _Model, _Color);
