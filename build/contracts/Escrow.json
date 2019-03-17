@@ -73,14 +73,14 @@
     "absolutePath": "/home/anshu1/Desktop/Gauranga/contracts/Escrow.sol",
     "exportedSymbols": {
       "Escrow": [
-        210
+        211
       ]
     },
-    "id": 211,
+    "id": 212,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 128,
+        "id": 129,
         "literals": [
           "solidity",
           "^",
@@ -96,31 +96,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 210,
+        "id": 211,
         "linearizedBaseContracts": [
-          210
+          211
         ],
         "name": "Escrow",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Escrow.State",
-            "id": 132,
+            "id": 133,
             "members": [
               {
-                "id": 129,
+                "id": 130,
                 "name": "AWAITING_PAYMENT",
                 "nodeType": "EnumValue",
                 "src": "60:16:1"
               },
               {
-                "id": 130,
+                "id": 131,
                 "name": "AWAITING_DELIVERY",
                 "nodeType": "EnumValue",
                 "src": "78:17:1"
               },
               {
-                "id": 131,
+                "id": 132,
                 "name": "COMPLETE",
                 "nodeType": "EnumValue",
                 "src": "97:8:1"
@@ -132,26 +132,26 @@
           },
           {
             "constant": false,
-            "id": 134,
+            "id": 135,
             "name": "currentState",
             "nodeType": "VariableDeclaration",
-            "scope": 210,
+            "scope": 211,
             "src": "111:18:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_enum$_State_$132",
+              "typeIdentifier": "t_enum$_State_$133",
               "typeString": "enum Escrow.State"
             },
             "typeName": {
               "contractScope": null,
-              "id": 133,
+              "id": 134,
               "name": "State",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 132,
+              "referencedDeclaration": 133,
               "src": "111:5:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_enum$_State_$132",
+                "typeIdentifier": "t_enum$_State_$133",
                 "typeString": "enum Escrow.State"
               }
             },
@@ -160,10 +160,10 @@
           },
           {
             "constant": false,
-            "id": 136,
+            "id": 137,
             "name": "buyer",
             "nodeType": "VariableDeclaration",
-            "scope": 210,
+            "scope": 211,
             "src": "136:20:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -172,7 +172,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 135,
+              "id": 136,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "136:7:1",
@@ -187,10 +187,10 @@
           },
           {
             "constant": false,
-            "id": 138,
+            "id": 139,
             "name": "seller",
             "nodeType": "VariableDeclaration",
-            "scope": 210,
+            "scope": 211,
             "src": "162:21:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -199,7 +199,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 137,
+              "id": 138,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "162:7:1",
@@ -214,7 +214,7 @@
           },
           {
             "body": {
-              "id": 149,
+              "id": 150,
               "nodeType": "Block",
               "src": "211:70:1",
               "statements": [
@@ -228,7 +228,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 144,
+                        "id": 145,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -237,18 +237,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 141,
+                            "id": 142,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 773,
+                            "referencedDeclaration": 772,
                             "src": "229:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 142,
+                          "id": 143,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -266,11 +266,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 143,
+                          "id": 144,
                           "name": "buyer",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 136,
+                          "referencedDeclaration": 137,
                           "src": "243:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -286,7 +286,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4e4f5420425559455221",
-                        "id": 145,
+                        "id": 146,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -313,21 +313,21 @@
                           "typeString": "literal_string \"NOT BUYER!\""
                         }
                       ],
-                      "id": 140,
+                      "id": 141,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        776,
-                        777
+                        775,
+                        776
                       ],
-                      "referencedDeclaration": 777,
+                      "referencedDeclaration": 776,
                       "src": "221:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 146,
+                    "id": 147,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -341,23 +341,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 147,
+                  "id": 148,
                   "nodeType": "ExpressionStatement",
                   "src": "221:42:1"
                 },
                 {
-                  "id": 148,
+                  "id": 149,
                   "nodeType": "PlaceholderStatement",
                   "src": "273:1:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 150,
+            "id": 151,
             "name": "buyerOnly",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 139,
+              "id": 140,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "208:2:1"
@@ -367,7 +367,7 @@
           },
           {
             "body": {
-              "id": 162,
+              "id": 163,
               "nodeType": "Block",
               "src": "325:106:1",
               "statements": [
@@ -378,24 +378,24 @@
                       {
                         "argumentTypes": null,
                         "commonType": {
-                          "typeIdentifier": "t_enum$_State_$132",
+                          "typeIdentifier": "t_enum$_State_$133",
                           "typeString": "enum Escrow.State"
                         },
-                        "id": 157,
+                        "id": 158,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 155,
+                          "id": 156,
                           "name": "currentState",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 134,
+                          "referencedDeclaration": 135,
                           "src": "343:12:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_State_$132",
+                            "typeIdentifier": "t_enum$_State_$133",
                             "typeString": "enum Escrow.State"
                           }
                         },
@@ -403,14 +403,14 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 156,
+                          "id": 157,
                           "name": "expectedState",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 152,
+                          "referencedDeclaration": 153,
                           "src": "359:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_State_$132",
+                            "typeIdentifier": "t_enum$_State_$133",
                             "typeString": "enum Escrow.State"
                           }
                         },
@@ -423,7 +423,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4e6f7420617661696c61626c6520696e2074686520726571756972656420737461746521",
-                        "id": 158,
+                        "id": 159,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -450,21 +450,21 @@
                           "typeString": "literal_string \"Not available in the required state!\""
                         }
                       ],
-                      "id": 154,
+                      "id": 155,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        776,
-                        777
+                        775,
+                        776
                       ],
-                      "referencedDeclaration": 777,
+                      "referencedDeclaration": 776,
                       "src": "335:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 159,
+                    "id": 160,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -478,47 +478,47 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 160,
+                  "id": 161,
                   "nodeType": "ExpressionStatement",
                   "src": "335:78:1"
                 },
                 {
-                  "id": 161,
+                  "id": 162,
                   "nodeType": "PlaceholderStatement",
                   "src": "423:1:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 163,
+            "id": 164,
             "name": "inState",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 153,
+              "id": 154,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 152,
+                  "id": 153,
                   "name": "expectedState",
                   "nodeType": "VariableDeclaration",
-                  "scope": 163,
+                  "scope": 164,
                   "src": "304:19:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_State_$132",
+                    "typeIdentifier": "t_enum$_State_$133",
                     "typeString": "enum Escrow.State"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 151,
+                    "id": 152,
                     "name": "State",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 132,
+                    "referencedDeclaration": 133,
                     "src": "304:5:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   },
@@ -533,25 +533,25 @@
           },
           {
             "body": {
-              "id": 178,
+              "id": 179,
               "nodeType": "Block",
               "src": "489:57:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 172,
+                    "id": 173,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 170,
+                      "id": 171,
                       "name": "buyer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 136,
+                      "referencedDeclaration": 137,
                       "src": "499:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -562,11 +562,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 171,
+                      "id": 172,
                       "name": "_buyer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 165,
+                      "referencedDeclaration": 166,
                       "src": "507:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -579,25 +579,25 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 173,
+                  "id": 174,
                   "nodeType": "ExpressionStatement",
                   "src": "499:14:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 176,
+                    "id": 177,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 174,
+                      "id": 175,
                       "name": "seller",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 138,
+                      "referencedDeclaration": 139,
                       "src": "523:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -608,11 +608,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 175,
+                      "id": 176,
                       "name": "_seller",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 167,
+                      "referencedDeclaration": 168,
                       "src": "532:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -625,29 +625,29 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 177,
+                  "id": 178,
                   "nodeType": "ExpressionStatement",
                   "src": "523:16:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 179,
+            "id": 180,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 168,
+              "id": 169,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 165,
+                  "id": 166,
                   "name": "_buyer",
                   "nodeType": "VariableDeclaration",
-                  "scope": 179,
+                  "scope": 180,
                   "src": "449:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -656,7 +656,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 164,
+                    "id": 165,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "449:7:1",
@@ -671,10 +671,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 167,
+                  "id": 168,
                   "name": "_seller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 179,
+                  "scope": 180,
                   "src": "465:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -683,7 +683,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 166,
+                    "id": 167,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "465:7:1",
@@ -700,12 +700,12 @@
               "src": "448:33:1"
             },
             "returnParameters": {
-              "id": 169,
+              "id": 170,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "489:0:1"
             },
-            "scope": 210,
+            "scope": 211,
             "src": "437:109:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -713,28 +713,28 @@
           },
           {
             "body": {
-              "id": 193,
+              "id": 194,
               "nodeType": "Block",
               "src": "637:55:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 191,
+                    "id": 192,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 188,
+                      "id": 189,
                       "name": "currentState",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 134,
+                      "referencedDeclaration": 135,
                       "src": "647:12:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_State_$132",
+                        "typeIdentifier": "t_enum$_State_$133",
                         "typeString": "enum Escrow.State"
                       }
                     },
@@ -744,18 +744,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 189,
+                        "id": 190,
                         "name": "State",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 132,
+                        "referencedDeclaration": 133,
                         "src": "662:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_enum$_State_$132_$",
+                          "typeIdentifier": "t_type$_t_enum$_State_$133_$",
                           "typeString": "type(enum Escrow.State)"
                         }
                       },
-                      "id": 190,
+                      "id": 191,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -765,37 +765,37 @@
                       "referencedDeclaration": null,
                       "src": "662:23:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_State_$132",
+                        "typeIdentifier": "t_enum$_State_$133",
                         "typeString": "enum Escrow.State"
                       }
                     },
                     "src": "647:38:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   },
-                  "id": 192,
+                  "id": 193,
                   "nodeType": "ExpressionStatement",
                   "src": "647:38:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 194,
+            "id": 195,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 182,
+                "id": 183,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 181,
+                  "id": 182,
                   "name": "buyerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 150,
+                  "referencedDeclaration": 151,
                   "src": "587:9:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -811,18 +811,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 184,
+                      "id": 185,
                       "name": "State",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 132,
+                      "referencedDeclaration": 133,
                       "src": "605:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_enum$_State_$132_$",
+                        "typeIdentifier": "t_type$_t_enum$_State_$133_$",
                         "typeString": "type(enum Escrow.State)"
                       }
                     },
-                    "id": 185,
+                    "id": 186,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -832,22 +832,22 @@
                     "referencedDeclaration": null,
                     "src": "605:22:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   }
                 ],
-                "id": 186,
+                "id": 187,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 183,
+                  "id": 184,
                   "name": "inState",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 163,
+                  "referencedDeclaration": 164,
                   "src": "597:7:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_modifier$_t_enum$_State_$132_$",
+                    "typeIdentifier": "t_modifier$_t_enum$_State_$133_$",
                     "typeString": "modifier (enum Escrow.State)"
                   }
                 },
@@ -858,18 +858,18 @@
             "name": "confirmPayment",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 180,
+              "id": 181,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "575:2:1"
             },
             "returnParameters": {
-              "id": 187,
+              "id": 188,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "637:0:1"
             },
-            "scope": 210,
+            "scope": 211,
             "src": "552:140:1",
             "stateMutability": "payable",
             "superFunction": null,
@@ -877,28 +877,28 @@
           },
           {
             "body": {
-              "id": 208,
+              "id": 209,
               "nodeType": "Block",
               "src": "777:97:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 206,
+                    "id": 207,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 203,
+                      "id": 204,
                       "name": "currentState",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 134,
+                      "referencedDeclaration": 135,
                       "src": "838:12:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_State_$132",
+                        "typeIdentifier": "t_enum$_State_$133",
                         "typeString": "enum Escrow.State"
                       }
                     },
@@ -908,18 +908,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 204,
+                        "id": 205,
                         "name": "State",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 132,
+                        "referencedDeclaration": 133,
                         "src": "853:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_enum$_State_$132_$",
+                          "typeIdentifier": "t_type$_t_enum$_State_$133_$",
                           "typeString": "type(enum Escrow.State)"
                         }
                       },
-                      "id": 205,
+                      "id": 206,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -929,37 +929,37 @@
                       "referencedDeclaration": null,
                       "src": "853:14:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_State_$132",
+                        "typeIdentifier": "t_enum$_State_$133",
                         "typeString": "enum Escrow.State"
                       }
                     },
                     "src": "838:29:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   },
-                  "id": 207,
+                  "id": 208,
                   "nodeType": "ExpressionStatement",
                   "src": "838:29:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 209,
+            "id": 210,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 197,
+                "id": 198,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 196,
+                  "id": 197,
                   "name": "buyerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 150,
+                  "referencedDeclaration": 151,
                   "src": "734:9:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -975,18 +975,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 199,
+                      "id": 200,
                       "name": "State",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 132,
+                      "referencedDeclaration": 133,
                       "src": "752:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_enum$_State_$132_$",
+                        "typeIdentifier": "t_type$_t_enum$_State_$133_$",
                         "typeString": "type(enum Escrow.State)"
                       }
                     },
-                    "id": 200,
+                    "id": 201,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -996,22 +996,22 @@
                     "referencedDeclaration": null,
                     "src": "752:23:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   }
                 ],
-                "id": 201,
+                "id": 202,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 198,
+                  "id": 199,
                   "name": "inState",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 163,
+                  "referencedDeclaration": 164,
                   "src": "744:7:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_modifier$_t_enum$_State_$132_$",
+                    "typeIdentifier": "t_modifier$_t_enum$_State_$133_$",
                     "typeString": "modifier (enum Escrow.State)"
                   }
                 },
@@ -1022,25 +1022,25 @@
             "name": "confirmDelivery",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 195,
+              "id": 196,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "722:2:1"
             },
             "returnParameters": {
-              "id": 202,
+              "id": 203,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "777:0:1"
             },
-            "scope": 210,
+            "scope": 211,
             "src": "698:176:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 211,
+        "scope": 212,
         "src": "25:852:1"
       }
     ],
@@ -1050,14 +1050,14 @@
     "absolutePath": "/home/anshu1/Desktop/Gauranga/contracts/Escrow.sol",
     "exportedSymbols": {
       "Escrow": [
-        210
+        211
       ]
     },
-    "id": 211,
+    "id": 212,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 128,
+        "id": 129,
         "literals": [
           "solidity",
           "^",
@@ -1073,31 +1073,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 210,
+        "id": 211,
         "linearizedBaseContracts": [
-          210
+          211
         ],
         "name": "Escrow",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Escrow.State",
-            "id": 132,
+            "id": 133,
             "members": [
               {
-                "id": 129,
+                "id": 130,
                 "name": "AWAITING_PAYMENT",
                 "nodeType": "EnumValue",
                 "src": "60:16:1"
               },
               {
-                "id": 130,
+                "id": 131,
                 "name": "AWAITING_DELIVERY",
                 "nodeType": "EnumValue",
                 "src": "78:17:1"
               },
               {
-                "id": 131,
+                "id": 132,
                 "name": "COMPLETE",
                 "nodeType": "EnumValue",
                 "src": "97:8:1"
@@ -1109,26 +1109,26 @@
           },
           {
             "constant": false,
-            "id": 134,
+            "id": 135,
             "name": "currentState",
             "nodeType": "VariableDeclaration",
-            "scope": 210,
+            "scope": 211,
             "src": "111:18:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_enum$_State_$132",
+              "typeIdentifier": "t_enum$_State_$133",
               "typeString": "enum Escrow.State"
             },
             "typeName": {
               "contractScope": null,
-              "id": 133,
+              "id": 134,
               "name": "State",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 132,
+              "referencedDeclaration": 133,
               "src": "111:5:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_enum$_State_$132",
+                "typeIdentifier": "t_enum$_State_$133",
                 "typeString": "enum Escrow.State"
               }
             },
@@ -1137,10 +1137,10 @@
           },
           {
             "constant": false,
-            "id": 136,
+            "id": 137,
             "name": "buyer",
             "nodeType": "VariableDeclaration",
-            "scope": 210,
+            "scope": 211,
             "src": "136:20:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1149,7 +1149,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 135,
+              "id": 136,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "136:7:1",
@@ -1164,10 +1164,10 @@
           },
           {
             "constant": false,
-            "id": 138,
+            "id": 139,
             "name": "seller",
             "nodeType": "VariableDeclaration",
-            "scope": 210,
+            "scope": 211,
             "src": "162:21:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1176,7 +1176,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 137,
+              "id": 138,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "162:7:1",
@@ -1191,7 +1191,7 @@
           },
           {
             "body": {
-              "id": 149,
+              "id": 150,
               "nodeType": "Block",
               "src": "211:70:1",
               "statements": [
@@ -1205,7 +1205,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 144,
+                        "id": 145,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1214,18 +1214,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 141,
+                            "id": 142,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 773,
+                            "referencedDeclaration": 772,
                             "src": "229:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 142,
+                          "id": 143,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1243,11 +1243,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 143,
+                          "id": 144,
                           "name": "buyer",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 136,
+                          "referencedDeclaration": 137,
                           "src": "243:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1263,7 +1263,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4e4f5420425559455221",
-                        "id": 145,
+                        "id": 146,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1290,21 +1290,21 @@
                           "typeString": "literal_string \"NOT BUYER!\""
                         }
                       ],
-                      "id": 140,
+                      "id": 141,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        776,
-                        777
+                        775,
+                        776
                       ],
-                      "referencedDeclaration": 777,
+                      "referencedDeclaration": 776,
                       "src": "221:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 146,
+                    "id": 147,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1318,23 +1318,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 147,
+                  "id": 148,
                   "nodeType": "ExpressionStatement",
                   "src": "221:42:1"
                 },
                 {
-                  "id": 148,
+                  "id": 149,
                   "nodeType": "PlaceholderStatement",
                   "src": "273:1:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 150,
+            "id": 151,
             "name": "buyerOnly",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 139,
+              "id": 140,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "208:2:1"
@@ -1344,7 +1344,7 @@
           },
           {
             "body": {
-              "id": 162,
+              "id": 163,
               "nodeType": "Block",
               "src": "325:106:1",
               "statements": [
@@ -1355,24 +1355,24 @@
                       {
                         "argumentTypes": null,
                         "commonType": {
-                          "typeIdentifier": "t_enum$_State_$132",
+                          "typeIdentifier": "t_enum$_State_$133",
                           "typeString": "enum Escrow.State"
                         },
-                        "id": 157,
+                        "id": 158,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 155,
+                          "id": 156,
                           "name": "currentState",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 134,
+                          "referencedDeclaration": 135,
                           "src": "343:12:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_State_$132",
+                            "typeIdentifier": "t_enum$_State_$133",
                             "typeString": "enum Escrow.State"
                           }
                         },
@@ -1380,14 +1380,14 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 156,
+                          "id": 157,
                           "name": "expectedState",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 152,
+                          "referencedDeclaration": 153,
                           "src": "359:13:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_State_$132",
+                            "typeIdentifier": "t_enum$_State_$133",
                             "typeString": "enum Escrow.State"
                           }
                         },
@@ -1400,7 +1400,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4e6f7420617661696c61626c6520696e2074686520726571756972656420737461746521",
-                        "id": 158,
+                        "id": 159,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1427,21 +1427,21 @@
                           "typeString": "literal_string \"Not available in the required state!\""
                         }
                       ],
-                      "id": 154,
+                      "id": 155,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        776,
-                        777
+                        775,
+                        776
                       ],
-                      "referencedDeclaration": 777,
+                      "referencedDeclaration": 776,
                       "src": "335:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 159,
+                    "id": 160,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1455,47 +1455,47 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 160,
+                  "id": 161,
                   "nodeType": "ExpressionStatement",
                   "src": "335:78:1"
                 },
                 {
-                  "id": 161,
+                  "id": 162,
                   "nodeType": "PlaceholderStatement",
                   "src": "423:1:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 163,
+            "id": 164,
             "name": "inState",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 153,
+              "id": 154,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 152,
+                  "id": 153,
                   "name": "expectedState",
                   "nodeType": "VariableDeclaration",
-                  "scope": 163,
+                  "scope": 164,
                   "src": "304:19:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_State_$132",
+                    "typeIdentifier": "t_enum$_State_$133",
                     "typeString": "enum Escrow.State"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 151,
+                    "id": 152,
                     "name": "State",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 132,
+                    "referencedDeclaration": 133,
                     "src": "304:5:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   },
@@ -1510,25 +1510,25 @@
           },
           {
             "body": {
-              "id": 178,
+              "id": 179,
               "nodeType": "Block",
               "src": "489:57:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 172,
+                    "id": 173,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 170,
+                      "id": 171,
                       "name": "buyer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 136,
+                      "referencedDeclaration": 137,
                       "src": "499:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1539,11 +1539,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 171,
+                      "id": 172,
                       "name": "_buyer",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 165,
+                      "referencedDeclaration": 166,
                       "src": "507:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1556,25 +1556,25 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 173,
+                  "id": 174,
                   "nodeType": "ExpressionStatement",
                   "src": "499:14:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 176,
+                    "id": 177,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 174,
+                      "id": 175,
                       "name": "seller",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 138,
+                      "referencedDeclaration": 139,
                       "src": "523:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1585,11 +1585,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 175,
+                      "id": 176,
                       "name": "_seller",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 167,
+                      "referencedDeclaration": 168,
                       "src": "532:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1602,29 +1602,29 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 177,
+                  "id": 178,
                   "nodeType": "ExpressionStatement",
                   "src": "523:16:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 179,
+            "id": 180,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 168,
+              "id": 169,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 165,
+                  "id": 166,
                   "name": "_buyer",
                   "nodeType": "VariableDeclaration",
-                  "scope": 179,
+                  "scope": 180,
                   "src": "449:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1633,7 +1633,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 164,
+                    "id": 165,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "449:7:1",
@@ -1648,10 +1648,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 167,
+                  "id": 168,
                   "name": "_seller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 179,
+                  "scope": 180,
                   "src": "465:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1660,7 +1660,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 166,
+                    "id": 167,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "465:7:1",
@@ -1677,12 +1677,12 @@
               "src": "448:33:1"
             },
             "returnParameters": {
-              "id": 169,
+              "id": 170,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "489:0:1"
             },
-            "scope": 210,
+            "scope": 211,
             "src": "437:109:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1690,28 +1690,28 @@
           },
           {
             "body": {
-              "id": 193,
+              "id": 194,
               "nodeType": "Block",
               "src": "637:55:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 191,
+                    "id": 192,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 188,
+                      "id": 189,
                       "name": "currentState",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 134,
+                      "referencedDeclaration": 135,
                       "src": "647:12:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_State_$132",
+                        "typeIdentifier": "t_enum$_State_$133",
                         "typeString": "enum Escrow.State"
                       }
                     },
@@ -1721,18 +1721,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 189,
+                        "id": 190,
                         "name": "State",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 132,
+                        "referencedDeclaration": 133,
                         "src": "662:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_enum$_State_$132_$",
+                          "typeIdentifier": "t_type$_t_enum$_State_$133_$",
                           "typeString": "type(enum Escrow.State)"
                         }
                       },
-                      "id": 190,
+                      "id": 191,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1742,37 +1742,37 @@
                       "referencedDeclaration": null,
                       "src": "662:23:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_State_$132",
+                        "typeIdentifier": "t_enum$_State_$133",
                         "typeString": "enum Escrow.State"
                       }
                     },
                     "src": "647:38:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   },
-                  "id": 192,
+                  "id": 193,
                   "nodeType": "ExpressionStatement",
                   "src": "647:38:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 194,
+            "id": 195,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 182,
+                "id": 183,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 181,
+                  "id": 182,
                   "name": "buyerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 150,
+                  "referencedDeclaration": 151,
                   "src": "587:9:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1788,18 +1788,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 184,
+                      "id": 185,
                       "name": "State",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 132,
+                      "referencedDeclaration": 133,
                       "src": "605:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_enum$_State_$132_$",
+                        "typeIdentifier": "t_type$_t_enum$_State_$133_$",
                         "typeString": "type(enum Escrow.State)"
                       }
                     },
-                    "id": 185,
+                    "id": 186,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1809,22 +1809,22 @@
                     "referencedDeclaration": null,
                     "src": "605:22:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   }
                 ],
-                "id": 186,
+                "id": 187,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 183,
+                  "id": 184,
                   "name": "inState",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 163,
+                  "referencedDeclaration": 164,
                   "src": "597:7:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_modifier$_t_enum$_State_$132_$",
+                    "typeIdentifier": "t_modifier$_t_enum$_State_$133_$",
                     "typeString": "modifier (enum Escrow.State)"
                   }
                 },
@@ -1835,18 +1835,18 @@
             "name": "confirmPayment",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 180,
+              "id": 181,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "575:2:1"
             },
             "returnParameters": {
-              "id": 187,
+              "id": 188,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "637:0:1"
             },
-            "scope": 210,
+            "scope": 211,
             "src": "552:140:1",
             "stateMutability": "payable",
             "superFunction": null,
@@ -1854,28 +1854,28 @@
           },
           {
             "body": {
-              "id": 208,
+              "id": 209,
               "nodeType": "Block",
               "src": "777:97:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 206,
+                    "id": 207,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 203,
+                      "id": 204,
                       "name": "currentState",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 134,
+                      "referencedDeclaration": 135,
                       "src": "838:12:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_State_$132",
+                        "typeIdentifier": "t_enum$_State_$133",
                         "typeString": "enum Escrow.State"
                       }
                     },
@@ -1885,18 +1885,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 204,
+                        "id": 205,
                         "name": "State",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 132,
+                        "referencedDeclaration": 133,
                         "src": "853:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_enum$_State_$132_$",
+                          "typeIdentifier": "t_type$_t_enum$_State_$133_$",
                           "typeString": "type(enum Escrow.State)"
                         }
                       },
-                      "id": 205,
+                      "id": 206,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1906,37 +1906,37 @@
                       "referencedDeclaration": null,
                       "src": "853:14:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_State_$132",
+                        "typeIdentifier": "t_enum$_State_$133",
                         "typeString": "enum Escrow.State"
                       }
                     },
                     "src": "838:29:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   },
-                  "id": 207,
+                  "id": 208,
                   "nodeType": "ExpressionStatement",
                   "src": "838:29:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 209,
+            "id": 210,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 197,
+                "id": 198,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 196,
+                  "id": 197,
                   "name": "buyerOnly",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 150,
+                  "referencedDeclaration": 151,
                   "src": "734:9:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1952,18 +1952,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 199,
+                      "id": 200,
                       "name": "State",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 132,
+                      "referencedDeclaration": 133,
                       "src": "752:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_enum$_State_$132_$",
+                        "typeIdentifier": "t_type$_t_enum$_State_$133_$",
                         "typeString": "type(enum Escrow.State)"
                       }
                     },
-                    "id": 200,
+                    "id": 201,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1973,22 +1973,22 @@
                     "referencedDeclaration": null,
                     "src": "752:23:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_State_$132",
+                      "typeIdentifier": "t_enum$_State_$133",
                       "typeString": "enum Escrow.State"
                     }
                   }
                 ],
-                "id": 201,
+                "id": 202,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 198,
+                  "id": 199,
                   "name": "inState",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 163,
+                  "referencedDeclaration": 164,
                   "src": "744:7:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_modifier$_t_enum$_State_$132_$",
+                    "typeIdentifier": "t_modifier$_t_enum$_State_$133_$",
                     "typeString": "modifier (enum Escrow.State)"
                   }
                 },
@@ -1999,25 +1999,25 @@
             "name": "confirmDelivery",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 195,
+              "id": 196,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "722:2:1"
             },
             "returnParameters": {
-              "id": 202,
+              "id": 203,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "777:0:1"
             },
-            "scope": 210,
+            "scope": 211,
             "src": "698:176:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 211,
+        "scope": 212,
         "src": "25:852:1"
       }
     ],
@@ -2029,7 +2029,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-03-17T06:31:14.218Z",
+  "updatedAt": "2019-03-17T07:08:21.730Z",
   "devdoc": {
     "methods": {}
   },
