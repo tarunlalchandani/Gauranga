@@ -100,9 +100,9 @@ The proposed model can be **undoubtedly** extended to other products and service
 
 - HEALTH CARE
 >In Healthcare industry, counterfeit drugs in the medical supply chain is  a sensitive issue. The main objective would be to empower quality of life by providing universal health-care solutions by creating transparency and by monitoring the route drugs go through till they reach the customers. It would facilitate recording the provenance of a particular medicine/drug’s history on the blockchain platform which in turn would offer much clearer picture of drug’s journey from  beginning to the very end.
-
 </br>
 https://revcycleintelligence.com/news/exploring-the-role-of-supply-chain-management-in-healthcare 
+</br>
 
 - ANY COMMODITY/ANY SERVICE
 
