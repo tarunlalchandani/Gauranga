@@ -35,7 +35,7 @@ https://tinyurl.com/y6n76axt (Google Drive)
 > the problems,
 ##        “. . . unless, of course, someone comes up with a solution .” - Team Gauranga
 
-### &#f90c0c; PROBLEM 
+### PROBLEM 
 
 **General**
 </br>
@@ -45,7 +45,7 @@ Supply chain management includes the integrated planning as well as the executio
 </br>
 In recent years, a trend of having personal bicycles has started among the students of our college which is evident from the continuously increasing number of bicycles on the campus. And surprisingly most of them are brand new bicycles, bought fresh from the market. The old system of buying *used* bicycles has become out-of-date, either due to the communication gap in the student hierarchy system or the non-stop influx of newer models in the market which is leading to a bicycle-flood in the campus. This has given rise to *two major problems* - **first**, the increasing load on the infrastructure (cycle stands) to support and store these bicycles and **second**, wastage of money in buying fresh models when old ones could have been bought at a much lesser price.
 
-### &#00ff6e; SOLUTION
+### SOLUTION
 
 **General**
 </br>
@@ -73,13 +73,11 @@ https://www.kbmanage.com/concept/centralisation-decentralisation
 ●  The handling of details and the storage mechanism was taken care of in the first step.
 
 The Smart Contact Algorithms and different special cases was coded in the language **solidity** first.
-
+</br>
+●   The .sol files were prepared, namely, Migrations.sol, BicycleBuy.sol, showbalance.sol, Escrow.sol, biketrade01.sol and metrobikitrade.sol.
 
 </br>
-●   The **.sol** files was prepared, namely, Migrations.sol, BicycleBuy.sol, showbalance.sol, Escrow.sol, biketrade01.sol and metrobikitrade.sol.
-
-</br>
-●   The same was transferred to **Truffle** Framework thereafter.
+●   The same was transferred to Truffle Framework thereafter.
 
 
 </br>
@@ -91,8 +89,8 @@ The Smart Contact Algorithms and different special cases was coded in the langua
 
 
 </br>
-●   The exchange of product goes on with the help of an ether(fuel to keep the transactions going) and an **Ethereum Wallet**, without the interference and/or manipulation of data/information by any third parties.
-**The seller and buyer are the only entities in the proposed transparent model.**
+●   The exchange of product goes on with the help of an ether(fuel to keep the transactions going) and an Ethereum Wallet, without the interference and/or manipulation of data/information by any third parties.
+The seller and buyer are the only entities in the proposed transparent model.
 
 
 ### FUTURE OF THE MODEL
@@ -115,7 +113,9 @@ https://revcycleintelligence.com/news/exploring-the-role-of-supply-chain-managem
 Achievements Accomplished Through The Model:
 
 -Leveraged combination of blockchain scaling
+</br>
 -Facilitated service with rabid focus on user experience
+</br>
 -Adopted blockchain in mainstream in Decentralised system
 
 
