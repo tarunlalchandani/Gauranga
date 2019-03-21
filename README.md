@@ -9,6 +9,9 @@ As a solution, we have proposed a blockchain based business application which wi
 For all the implemetation details please visit the google drive link.
 Google drive link: https://drive.google.com/open?id=1bk5KVQ77Kt_LfxIhNuJoEUdLHC2LzWqA
 
+For implementation video, please watch the video:
+https://tinyurl.com/y3g8ewcs
+
 Scalability:
 This decentralized platform can be scaled to facilitate the trading of any commodity which has the possiblity of being reused/reselled. It is the decentralized version of e-commerce tech giants such as OLX, Quikr etc.
 
