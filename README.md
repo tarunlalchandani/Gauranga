@@ -104,14 +104,19 @@ The proposed model can be **undoubtedly** extended to other products and service
 https://revcycleintelligence.com/news/exploring-the-role-of-supply-chain-management-in-healthcare 
 </br>
 
+</br>
 - **BLOCKCHAIN BANKING/DISTRIBUTED LEDGER SYSTEM**
 >One of the most talked-about topics in the financial services industry today is
->Blockchain Banking. If fully adopted, it will enable banks to process payments more quickly and >more accurately while reducing transaction processing costs and the requirement for exceptions.
+>Blockchain Banking. 
+>If fully adopted, it will enable banks to process payments more quickly and 
+>more accurately while reducing transaction processing costs and the requirement for exceptions.
 
 >To capitalize on this potential, banks need to build the infrastructure required to create and >operate a true global network using solutions based on this transformative technology.
 
 >Blockchain use is, indeed, top of mind among banking sector which lead payments businesses.
 
+http://www.bookingbug.com/blog/what-blockchain-will-mean-for-banks/
+</br>
 </br>
 
 Achievements Accomplished Through The Model:
