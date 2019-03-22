@@ -104,6 +104,7 @@ The proposed model can be **undoubtedly** extended to other products and service
 https://revcycleintelligence.com/news/exploring-the-role-of-supply-chain-management-in-healthcare 
 </br>
 
+
 - **BLOCKCHAIN BANKING/DISTRIBUTED LEDGER SYSTEM**
 >One of the most talked-about topics in the financial services industry today is
 >Blockchain Banking. If fully adopted, it will enable banks to process payments more quickly and 
