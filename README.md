@@ -1,5 +1,7 @@
 # Ethereum Track: Blockchain based business web-application to facilitate the trade of bicycles
 
+This project was built for a hackathon named *HackFest*.
+
 
 ## The Hack is LIVE at -
 https://metrobiki.github.io
