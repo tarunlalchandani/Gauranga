@@ -25,7 +25,7 @@ App = {
 
   initWeb3: async function() {
     /*
-     * Replace me...
+     * Replace me..
      */
 
     return App.initContract();
@@ -33,7 +33,7 @@ App = {
 
   initContract: function() {
     /*
-     * Replace me...
+     * Replace me..
      */
 
     return App.bindEvents();
