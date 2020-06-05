@@ -23,7 +23,7 @@ contract BicycleRegister is Ownable {
     Bicycle[] public bicycles;
 
     mapping(uint => address) public bicycleToOwner;
-    mapping(address => uint) public ownerBicycleCount;   //
+    mapping(address => uint) public ownerBicycleCount;   
 
     function _registerBicycle(string memory _Model, string memory _Color) private {
         uint id = bicycles.push(Bicycle(_Model, _Color, msg.sender, 0, 0, 0, 0, State.NOTFORSALE, address(0))) - 1; 
