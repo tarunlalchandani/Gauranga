@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 import "./MetroBiki.sol";
-//conditions under which a reviewer can review...
+//conditions under which a reviewer can review
 
 contract Review is BicycleRegister {
 
