@@ -16,7 +16,6 @@ contract BicycleBuy is ForSale {
         bicycles[_bicycleId].state = State.HOLD;
         bicycles[_bicycleId].boughtAtTime = uint16(now);  
     }
-
     
     function delivered(uint _bicycleId) external payable {   //incomplete function
         require(msg.sender == bicycles[_bicycleId].buyer, "Not buyer!");
@@ -28,5 +27,4 @@ contract BicycleBuy is ForSale {
         targetBicycle.Owner = msg.sender;
         targetBicycle.buyer = address(0);
     }
-    
 }
